@@ -1,0 +1,24 @@
+{
+  "name": "cheeky-unts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "@blockfrost/blockfrost-js": "^4.2.1",
+    "@discordjs/rest": "^1.0.1",
+    "discord.js": "^14.2.0",
+    "node-fetch": "^3.2.10",
+    "openai": "^3.0.0"
+  }
+}
