@@ -31,6 +31,7 @@ module.exports = {
 				client[race_organiser_id][`${interaction.customId.replace('modal', 'button')}`] = false;
 				return;
 			}
+			dog_metadata.racer_id = interaction.user.id
 			client[race_organiser_id].racing_players++;
 			client[race_organiser_id].participating_dogs.push(dog_metadata);
 			client[race_organiser_id].participating_users.push(interaction.user.id);

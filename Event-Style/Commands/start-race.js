@@ -43,7 +43,7 @@ module.exports = {
 			const raw_autostart = interaction.options.getBoolean('auto-start');
 			const auto_start = raw_autostart === null ? true : raw_autostart;
 			const raw_handicap = interaction.options.getBoolean('auto-start');
-			const handicap_mode = raw_handicap === null ? true : raw_autostart;
+			const handicap_mode = raw_handicap === null ? false : raw_autostart;
 			const raw_wager = interaction.options.getString('wager-message');
 			const wager_text = raw_wager === null ? 'TrenchATop is the best\nTrenchATop is number 1!\n- Endorsed by King Unt' : raw_wager;
 

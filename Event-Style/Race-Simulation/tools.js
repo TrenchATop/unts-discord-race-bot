@@ -61,6 +61,7 @@ const GetDogSum = (dog_object) => {
 module.exports.GetExtraDogInfo = ((test_dogs, handicap_mode) => {
 	if (handicap_mode) {
 		return test_dogs.map((dog) => ({
+			'racer_id': dog.racer_id,
 			'name': dog.name,
 			'image': dog.image,
 			'Age': dog.Age,
@@ -135,5 +136,5 @@ const WinnerEmojis = (num) => {
 };
 module.exports.SortWinners = (all_dogs) => {
 	const sorted_winners = all_dogs.sort((x, y) => x.current_race_time - y.current_race_time);
-	return [sorted_winners.map((dog, index) => `${WinnerEmojis(index + 1)} **${dog.name}:**  ` + `${this.ConvertToTime(dog.current_race_time / 100)}`), sorted_winners[0]['save Your Dogo'], sorted_winners[0].name, sorted_winners[0].Class];
+	return [sorted_winners.map((dog, index) => `${WinnerEmojis(index + 1)} **${dog.name}:**  ` + `${this.ConvertToTime(dog.current_race_time / 100)}${index === 1 ? `\n- <@${dog.racer_id}>` : ''}`), sorted_winners[0]['save Your Dogo'], sorted_winners[0].name, sorted_winners[0].Class];
 };
