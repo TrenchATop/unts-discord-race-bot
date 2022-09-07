@@ -1,0 +1,7 @@
+{
+    "bot_token": "discord_bot_token",
+    "bot_id": "discord_bot_id",
+    "guild_id": "discord_server_id",
+    "blockfrost_token": "blockfrost_mainnet_token",
+    "open_ai_key": "openai_key"
+}
